@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php
+<?php // a test
 $cur_cat_id = get_cat_id( single_cat_title("",false) );
 ?>
   <!-- Start the Content here -->
