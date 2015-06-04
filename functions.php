@@ -43,6 +43,13 @@ function my_theme_add_editor_styles() {
 }
 add_action( 'after_setup_theme', 'my_theme_add_editor_styles' );
 
+// Change the Read More
+
+function new_excerpt_more( $more ) {
+  return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( '&rarr;', 'your-text-domain' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
 
 // Featured image Support
 
