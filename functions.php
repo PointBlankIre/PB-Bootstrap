@@ -85,6 +85,10 @@ function wpbootstrap_scripts_with_jquery()
 	// For either a plugin or a theme, you can then enqueue the script:
 	wp_enqueue_script( 'custom-script' );
 	
+	wp_register_script( 'jquery.cookiesdirective.js', get_template_directory_uri() . '/js/jquery.cookiesdirective.js' );
+	 // For either a plugin or a theme, you can then enqueue the script:
+	 wp_enqueue_script( 'jquery.cookiesdirective.js' );
+	
 
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
