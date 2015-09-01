@@ -4,7 +4,7 @@
  * 24 October 2013
  */
 
-;(function($) {
+jQuery(function() { 
   jQuery.cookiesDirective = function(options) {
       
     // Default Cookies Directive Settings
