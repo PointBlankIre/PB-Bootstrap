@@ -115,16 +115,7 @@ function pb_url_login(){
    add_action('login_head', 'custom_login_logo');
 
 
-function add_cookie_warning()
-{
 
-  // Register the script like this for a theme:
-  wp_register_script( 'cookie-script', get_template_directory_uri() . '/js/cookiewarning.js','','',true );
-
-  // For either a plugin or a theme, you can then enqueue the script:
-  wp_enqueue_script( 'cookie-script' );
-}
-add_action( 'wp_enqueue_scripts', 'add_cookie_warning' );
 
 
 // Boostrap Pagination
