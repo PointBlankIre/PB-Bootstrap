@@ -1,0 +1,19 @@
+// Custom Mixins
+// --------------------------------------------------
+
+
+.anchor_transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition:  all @duration @ease;
+}
+
+// HEX to rgba
+.bg_transparent (@color, @alpha: 1) {
+  background: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
+
+.col_transparent (@color, @alpha: 1) {
+  color: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
