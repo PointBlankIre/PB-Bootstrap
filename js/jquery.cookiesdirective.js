@@ -4,7 +4,7 @@
  * 24 October 2013
  */
 
-jQuery(function() { 
+;(function($) {
   jQuery.cookiesDirective = function(options) {
       
     // Default Cookies Directive Settings
@@ -173,7 +173,7 @@ jQuery(function() {
     html += '<div id="epd">';
     html += '<div id="cookiesdirective" style="position:'+ settings.css +';'+ settings.position + ':-300px;left:0px;width:100%;';
     html += 'height:auto;background:' + settings.backgroundColor + ';opacity:.' + settings.backgroundOpacity + ';';
-    html += '-ms-filter: â€œalpha(opacity=' + settings.backgroundOpacity + ')â€; filter: alpha(opacity=' + settings.backgroundOpacity + ');';
+    html += '-ms-filter: Ã¢â‚¬Å“alpha(opacity=' + settings.backgroundOpacity + ')Ã¢â‚¬Â; filter: alpha(opacity=' + settings.backgroundOpacity + ');';
     html += '-khtml-opacity: .' + settings.backgroundOpacity + '; -moz-opacity: .' + settings.backgroundOpacity + ';';
     html += 'color:' + settings.fontColor + ';font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';';
     html += 'text-align:center;z-index:1000;">';
