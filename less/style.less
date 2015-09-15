@@ -1,0 +1,152 @@
+// Bootstrap library.
+@import 'bootstrap.less';
+@import '../css/font-awesome.min.css';
+
+// Base-theme overrides.
+@import 'variables.less';
+
+
+
+@logodesktop:             url("https://s3.amazonaws.com/pointblankltd/uploads/bootstrap/pblogo.png" ) no-repeat; 
+
+body        { padding-top: 0;
+// Optimize webfont legibility
+text-rendering: optimizeLegibility;
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+-webkit-font-smoothing: antialiased;
+}
+
+// Text elements
+//----------------------------------------------------------
+
+p           { margin: 0 0 1.2em;letter-spacing: 0.02em;}
+p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
+
+a:focus, 
+a:hover     {}
+a           {text-decoration: none;}
+
+
+// Images
+
+.alignleft {display: inline;float: left;margin-right: 1.625em;}
+.alignright {display: inline;float: right;margin-left: 1.625em;}
+
+
+// NavBar
+//----------------------------------------------------------
+.navbar {
+      .navbar-brand { background: @logodesktop; width:173px; height:112px;padding:0;margin:5px 0 5px 0px;} 
+      .nav>.active>a, .nav>.active>a:hover, .nav>li>a:focus, .nav>li>a:hover, .nav>.active>a:focus {}
+      // Navbar button for toggling navbar items in responsive layouts
+
+      .navbar-toggle .icon-bar {display: block;width: 18px;height: 2px;}
+      .navbar-toggle .icon-bar + .icon-bar {margin-top: 3px;}
+
+      // NavBar Dropdown 
+      .dropdown-submenu {position: relative;}
+      .dropdown:hover>.dropdown-menu {display: block;}
+      .dropdown-submenu>.dropdown-menu {top: 0;left: 100%;margin-top: -6px; margin-left: -1px; }
+      .dropdown-submenu:hover>.dropdown-menu {display: block;}
+      .dropdown-submenu>a:after {
+          display: block;content: " ";float: right;width: 0;height: 0;border-color: transparent;border-style: solid;
+          border-width: 5px 0 5px 5px;border-left-color: #ccc;margin-top: 5px;margin-right: -10px;}
+      .dropdown-submenu:hover>a:after {border-left-color: #fff;}
+      .dropdown-submenu.pull-left {float: none;}
+      .dropdown-submenu.pull-left>.dropdown-menu {left: -100%;margin-left: 10px;}
+
+      } // /.navbar
+
+// Lists
+//----------------------------------------------------------
+
+      aside.unstyled {ul {margin-left:0;list-style:none}}
+
+
+// Side Menu
+//----------------------------------------------------------
+
+   .sidebar {
+        .nav>li {
+          position: static;
+          >a {
+            position: static;
+            padding: 10px 8px;
+          }
+        }
+        .current-menu-item .dropdown-menu, 
+        .current-menu-ancestor .dropdown-menu {
+          display: block;
+        }
+        .dropdown-menu, .sub-menu {
+          position: static;
+          .box-shadow (0 0 0 rgba(0,0,0,0));
+          height: auto;
+          width: 100%;
+          float: left;
+          border:0;
+          padding:0;
+          margin:0 0 6px 0;
+          border-radius: 0;
+          li.current-menu-item >a {
+          }          
+          >li {list-style: none;
+          }
+        } 
+
+    } // /.sidebar
+
+
+//----------------------------------------------------------
+
+
+// Homepage
+//----------------------------------------------------------
+
+      .jumbotron {background: white;}
+
+// Footer
+//----------------------------------------------------------
+
+
+// Media Queries
+//----------------------------------------------------------
+
+// 1200px 
+@media (min-width: @screen-lg) {
+
+} 
+// end 1200px
+
+// 1024 
+@media (max-width: 1024px)  {
+
+} 
+// end 1024
+
+// Collapsed Width
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+
+} 
+// End Collapsed width
+
+
+// 769px
+@media (max-width: @screen-sm) {
+
+} 
+// end 769px
+
+// 480px
+@media (max-width: @screen-xs) {
+      
+}
+// end 480px
+
+
+

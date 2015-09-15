@@ -81,7 +81,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 function wpbootstrap_scripts_with_jquery()
 {
 	// Register the script like this for a theme:
-	wp_register_script( 'custom-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ),'','',true  );
+	wp_register_script( 'custom-script', get_template_directory_uri() . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ),'','',true  );
 	// For either a plugin or a theme, you can then enqueue the script:
 	wp_enqueue_script( 'custom-script' );
 	
