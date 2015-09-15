@@ -6,7 +6,6 @@
 @import 'variables.less';
 
 
-@logodesktop:             url("https://s3.amazonaws.com/pointblankltd/uploads/bootstrap/pblogo.png" ) no-repeat; 
 
 body        { padding-top: 0;
 // Optimize webfont legibility
@@ -44,7 +43,9 @@ a           {text-decoration: none;}
       .nav>.active>a, .nav>.active>a:hover, .nav>li>a:focus, .nav>li>a:hover, .nav>.active>a:focus {}
       // Navbar button for toggling navbar items in responsive layouts
 
-      .navbar-toggle .icon-bar {display: block;width: 18px;height: 2px;}
+      .navbar-toggle {background-color: @gray-lighter;}
+
+      .navbar-toggle .icon-bar {display: block;width: 18px;height: 2px;background-color: @gray;}
       .navbar-toggle .icon-bar + .icon-bar {margin-top: 3px;}
 
       // NavBar Dropdown 
