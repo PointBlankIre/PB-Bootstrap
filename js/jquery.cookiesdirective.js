@@ -177,7 +177,7 @@
     html += '-khtml-opacity: .' + settings.backgroundOpacity + '; -moz-opacity: .' + settings.backgroundOpacity + ';';
     html += 'color:' + settings.fontColor + ';font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';';
     html += 'text-align:center;z-index:1000;">';
-    html += '<div style="position:relative;height:auto;width:90%;padding:10px;margin-left:auto;margin-right:auto;">';
+    html += '<div style="position:relative;height:auto;padding-top:15px;padding-bottom:15px;" class="container cookiesdirective">';
       
     if(!settings.message) {
       if(settings.explicitConsent) {
@@ -199,7 +199,7 @@
       html += 'font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';" href="'+ settings.privacyPolicyUri + '">privacy policy</a>.<br/>';
       html += '<div id="epdnotick" style="color:#ca0000;display:none;margin:2px;"><span style="background:#cecece;padding:2px;">You must tick the "I accept cookies from this site" box to accept</span></div>';
       html += '<div style="margin-top:5px;">I accept cookies from this site <input type="checkbox" name="epdagree" id="epdagree" />&nbsp;';
-      html += '<input type="submit" name="explicitsubmit" id="explicitsubmit" value="Continue"/><br/></div></div>';
+      html += '<input type="submit" class="btn btn-default" name="explicitsubmit" id="explicitsubmit" value="Continue"/><br/></div></div>';
     
     } else {
       // Implied consent disclosure
