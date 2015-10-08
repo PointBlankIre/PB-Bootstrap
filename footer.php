@@ -58,7 +58,7 @@
 	jQuery(function() { 
 
 		jQuery.cookiesDirective({
-	            explicitConsent: true, // false allows implied consent
+	            explicitConsent: false, // false allows implied consent
 	            position: 'bottom', // top or bottom of viewport
 	            duration: 10, // display time in seconds
 	            limit: 0, // limit disclosure appearances, 0 is forever     
