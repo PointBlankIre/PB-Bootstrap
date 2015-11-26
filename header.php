@@ -16,7 +16,7 @@
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
   </head>
-  <body <?php body_class($class); ?>>
+  <body <?php body_class(); ?>>
 
 
   <div class="navbar navbar navbar-static-top" role="navigation">
